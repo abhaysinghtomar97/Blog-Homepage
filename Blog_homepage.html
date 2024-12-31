@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A blog homepage featuring posts on fitness, entrepreneurship, and education.">
+    <title>Blog Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: rgb(25, 25, 24);
+            margin: 0;
+        }
+
+        .container {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: blueviolet;
+            display: flex;
+            height: 100px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2%;
+        }
+
+        .logo {
+            height: 80%;
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav ul li {
+            margin: 0 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+        .nav ul li a:hover {
+            color: rgb(255, 0, 4);
+            transition: ease-in 0.1s;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search input {
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+        }
+
+        .search input:focus {
+            outline: rgb(0, 0, 0);
+        }
+
+        .search button {
+            padding: 8px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search button:hover {
+            background-color: blue;
+            transition: ease-in-out 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            text-decoration: underline;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 36px;
+        }
+
+        .card {
+            background-color: rgb(236, 229, 190);
+            border-radius: 20px;
+            height: 350px;
+            width: 350px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .Thumbnail {
+            width: 90%;
+            height: 60%;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        .card h3 {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .card button {
+            padding: 10px;
+            position: absolute;
+            bottom: 10px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: blue;
+            transition: ease-in 0.2s;
+        }
+
+        .footer {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 50px;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .footer-links li {
+            cursor: pointer;
+        }
+        .footer-links a:hover {
+            color: rgb(255, 0, 4);
+            transition: ease-in 0.5s;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+    <div class="container">
+        <!-- Header section -->
+        <header class="header">
+            <nav class="nav">
+                <img class="logo"
+                    src="https://i.ibb.co/chnt1S0/DALL-E-2024-12-31-18-33-46-A-modern-and-sleek-logo-design-for-a-blog-site-homepage-featuring-the-tex.webp"
+                    alt="Blog Logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <button>Search</button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main content -->
+        <main class="main">
+            <h1>Today's Hot Posts</h1>
+            <section class="cards">
+                <div class="card">
+                    <img class="Thumbnail"
+                        src="https://blogpsit.wordpress.com/wp-content/uploads/2018/01/img_1739.jpg?w=1024&h=645"
+                        alt="Fitness in Student Life">
+                    <h3>Importance of Fitness in a Student's Life</h3>
+                    <button><a
+                            href="https://blogpsit.wordpress.com/2018/01/19/importance-of-fitness-in-a-students-life/">Read
+                            More</a></button>
+                </div>
+                <div class="card">
+                    <img class="Thumbnail" src="https://i.ibb.co/3SHQY2B/businessman-2606509-1920.webp"
+                        alt="Entrepreneurship">
+                    <h3>IEDC PSIT - Entrepreneurship</h3>
+                    <button><a href="https://blogpsit.wordpress.com/2018/01/19/iedc-psit-entreprenurship/">Read
+                            More</a></button>
+                </div>
+                <div class="card">
+                    <img class="Thumbnail" src="https://detailed.com/images/edutopia.jpg" alt="Edutopia">
+                    <h3>Edutopia</h3>
+                    <button><a href="https://www.edutopia.org/">Read More</a></button>
+                </div>
+                <div class="card">
+                    <img class="Thumbnail" src="https://detailed.com/images/elearning-industry.jpg" alt="eLearning">
+                    <h3>eLearning Industry</h3>
+                    <button><a href="https://elearningindustry.com/articles">Read More</a></button>
+                </div>
+                <div class="card">
+                    <img class="Thumbnail" src="https://detailed.com/images/getting-smart.jpg" alt="Getting Smart">
+                    <h3>Getting Smart</h3>
+                    <button><a href="https://www.gettingsmart.com/blog/">Read More</a></button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="aboutus">
+                <h3>About Us</h3>
+                <p>This blog is a collection of posts on fitness, entrepreneurship, and education. Stay tuned for more
+                    updates!</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="https://www.linkedin.com/in/abhay-singh-tomar-b26057204/">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/abhay_singhtomar/?hl=en">Instagram</a></li>
+                <li><a href="https://github.com/abhaysinghtomar97">GitHub</a></li>
+                <li><a href="https://www.sololearn.com/en/profile/21545361">SoloLearn</a></li>
+            </ul>
+            <hr>
+            <p>&copy; Abhay Singh Tomar</p>
+        </footer>
+    </div>
+</body>
+
+</html>
